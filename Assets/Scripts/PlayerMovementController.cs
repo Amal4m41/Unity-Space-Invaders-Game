@@ -19,7 +19,7 @@ public class PlayerMovementController : MonoBehaviour
     {
 
         //To configure the input manager goto: Unity->File->Project settings->Input Manager
-        //here we get wether a/left arrow or d/right arrow key was pressed 
+        //here we get whether a/left arrow or d/right arrow key was pressed 
         float horizontalAxisInput = Input.GetAxis("Horizontal");  //the string "Horizontal" is defined in the input manager.
         //value=0(if not triggered), 1(right side), -1(left side)
         
@@ -29,11 +29,21 @@ public class PlayerMovementController : MonoBehaviour
 
         //To give this input info to the player object:
         // creating a direction object
-        Vector2 direction = new Vector2(horizontalAxisInput, verticalAxisInput);
+        Vector2 direction = new Vector2(horizontalAxisInput, verticalAxisInput);    
 
 
         //setting a normalized speed for our player in the direction h and v(i.e. when h and v keys are pressed at the same time).
         rigidbodyObject.velocity = direction.normalized * speed;
+
+
+        //Accessing the Animator component of the player object(since this script is attached to the player object).
+        GetComponent<Animator>().SetBool("isFlyingLeft", horizontalAxisInput < 0 && verticalAxisInput>0
+            || horizontalAxisInput<0); //When horizontal value is -1(moving left) 
+            //i.e < 0 the value will be set to true
+        GetComponent<Animator>().SetBool("isFlyingUp", verticalAxisInput > 0 && horizontalAxisInput==0); 
+        GetComponent<Animator>().SetBool("isFlyingDown", verticalAxisInput < 0); 
+        GetComponent<Animator>().SetBool("isFlyingRight", horizontalAxisInput > 0 && verticalAxisInput > 0 
+            || horizontalAxisInput>0); 
     }
 
  
