@@ -57,6 +57,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerMovementController.cs" />
+    <Compile Include="Assets\Scripts\SpawnBulletController.cs" />
+    <Compile Include="Assets\Scripts\MoveStraightController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3631590632713828407}
   - component: {fileID: 3631590632713828362}
   - component: {fileID: 3631590632713828405}
+  - component: {fileID: 1392092252}
+  - component: {fileID: -6164835607959512545}
   m_Layer: 0
   m_Name: Monster2
   m_TagString: Untagged
@@ -122,3 +124,30 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1392092252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3631590632713828406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11a9d7f652525d14e9cd5224e14c309c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 8316817705079316766, guid: fa5b8e8b9f91d59449c83d47119f6a0c, type: 3}
+  interval: 1
+--- !u!114 &-6164835607959512545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3631590632713828406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1314dc62bd518d44aad98be9e252bd7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: {x: 0, y: -2}
