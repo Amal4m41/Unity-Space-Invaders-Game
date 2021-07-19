@@ -7,11 +7,14 @@ public class PlayerMovementController : MonoBehaviour
 
     public float speed = 10f; //speed is always done in float in unity.
     private Rigidbody2D rigidbodyObject;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbodyObject = GetComponent<Rigidbody2D>();  //get the rigid body 2d component of the game object.
+        animator = GetComponent<Animator>(); //Accessing the Animator component of the player object(since 
+        //this script is attached to the player object).
     }
 
     // Update is called once per frame
@@ -36,14 +39,12 @@ public class PlayerMovementController : MonoBehaviour
         rigidbodyObject.velocity = direction.normalized * speed;
 
 
-        //Accessing the Animator component of the player object(since this script is attached to the player object).
-        GetComponent<Animator>().SetBool("isFlyingLeft", horizontalAxisInput < 0 && verticalAxisInput>0
-            || horizontalAxisInput<0); //When horizontal value is -1(moving left) 
-            //i.e < 0 the value will be set to true
-        GetComponent<Animator>().SetBool("isFlyingUp", verticalAxisInput > 0 && horizontalAxisInput==0); 
-        GetComponent<Animator>().SetBool("isFlyingDown", verticalAxisInput < 0); 
-        GetComponent<Animator>().SetBool("isFlyingRight", horizontalAxisInput > 0 && verticalAxisInput > 0 
-            || horizontalAxisInput>0); 
+        //For the state transition conditions for the player object
+        animator.SetBool("isFlyingLeft", horizontalAxisInput < 0 ); //When horizontal value is -1(moving left) 
+                                                                    //i.e < 0 the value will be set to true
+        animator.SetBool("isFlyingUp", verticalAxisInput > 0 && horizontalAxisInput==0);
+        animator.SetBool("isFlyingDown", verticalAxisInput < 0 && horizontalAxisInput == 0);
+        animator.SetBool("isFlyingRight", horizontalAxisInput > 0); 
     }
 
  
