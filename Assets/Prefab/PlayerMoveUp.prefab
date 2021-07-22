@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3706349856317125431}
   m_Layer: 0
   m_Name: PlayerMoveUp
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,3 +180,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 7956721497297115452, guid: e569ee65f42545f41b62c521b9340756, type: 3}
+  interval: 1
