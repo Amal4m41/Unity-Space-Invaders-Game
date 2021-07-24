@@ -21,8 +21,9 @@ public class MoveToPlayerController : MonoBehaviour
 
         Vector2 v2 = new Vector2(v3.x, v3.y);
 
-        Debug.Log(gameobjectPlayer.transform.position);
-        Debug.Log(this.transform.position);
+        //Debug.Log(gameobjectPlayer.transform.position);
+        //Debug.Log(this.transform.position);
+        
         //Attach the velocity to the rigid body of the gameobject that holds this script
         GetComponent<Rigidbody2D>().velocity = v2 * speed;
     }

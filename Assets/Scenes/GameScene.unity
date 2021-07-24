@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 182881910}
   - component: {fileID: 182881912}
   - component: {fileID: 182881911}
+  - component: {fileID: 182881913}
   m_Layer: 0
   m_Name: LeftWall
   m_TagString: Untagged
@@ -233,6 +234,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &182881913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182881909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fcb2de679b697459662e7ba6ff26bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,6 +374,7 @@ GameObject:
   - component: {fileID: 895727227}
   - component: {fileID: 895727226}
   - component: {fileID: 895727228}
+  - component: {fileID: 895727229}
   m_Layer: 0
   m_Name: BottomWall
   m_TagString: Untagged
@@ -460,6 +474,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &895727229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895727225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fcb2de679b697459662e7ba6ff26bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1439258250
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,6 +497,7 @@ GameObject:
   - component: {fileID: 1439258251}
   - component: {fileID: 1439258253}
   - component: {fileID: 1439258252}
+  - component: {fileID: 1439258254}
   m_Layer: 0
   m_Name: TopWall
   m_TagString: Untagged
@@ -570,6 +597,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1439258254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439258250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fcb2de679b697459662e7ba6ff26bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1484417347
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,6 +620,7 @@ GameObject:
   - component: {fileID: 1484417348}
   - component: {fileID: 1484417350}
   - component: {fileID: 1484417349}
+  - component: {fileID: 1484417351}
   m_Layer: 0
   m_Name: RigthWall
   m_TagString: Untagged
@@ -680,6 +720,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1484417351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484417347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fcb2de679b697459662e7ba6ff26bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3631590633422153578
 PrefabInstance:
   m_ObjectHideFlags: 0

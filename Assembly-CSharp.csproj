@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\MoveToPlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerMovementController.cs" />
     <Compile Include="Assets\Scripts\SpawnBulletController.cs" />
+    <Compile Include="Assets\Scripts\BorderCollision.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
