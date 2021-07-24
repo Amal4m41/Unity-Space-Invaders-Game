@@ -11,7 +11,8 @@ public class BorderCollision : MonoBehaviour
         //Debug.Log("Collision with wall");
 
 
-        if (collision.gameObject.name != "PlayerMoveUp")
+//        if (collision.gameObject.name != "PlayerMoveUp")   OR
+        if (collision.gameObject.tag != "Player")
         {
             //collision.gameObject is the incoming gameobject involved in the collision with the gameobject holding
             //this script

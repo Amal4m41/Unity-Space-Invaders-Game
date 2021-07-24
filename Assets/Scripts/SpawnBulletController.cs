@@ -21,7 +21,8 @@ public class SpawnBulletController : MonoBehaviour
 
     private void ShootBullet()
     {
-        //create a clone of the bullet gameobject, at the position of the parent and rotation as identity
+        //create a clone of the bullet gameobject, at the position of the parent(the object to which the script is attached)
+        //and rotation as identity
         GameObject g = Instantiate(bullet, transform.position, Quaternion.identity); 
     }
 }
