@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3706349857789331764}
   - component: {fileID: 3706349857789331767}
   - component: {fileID: 6800065796235282308}
+  - component: {fileID: 898837488893296146}
   m_Layer: 0
   m_Name: PlayerMoveUp
   m_TagString: Player
@@ -167,6 +168,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &898837488893296146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3706349857789332168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a8e23e1219e624bb4b7d5413e1bebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7355370335051837780
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,4 +224,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 7956721497297115452, guid: e569ee65f42545f41b62c521b9340756, type: 3}
-  interval: 1
+  interval: 0.5

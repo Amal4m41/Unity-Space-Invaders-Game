@@ -339,6 +339,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/BorderCollision.cs"
+"Assets/Scripts/CollisionMonsterController.cs"
+"Assets/Scripts/CollisionPlayerBulletController.cs"
 "Assets/Scripts/MoveStraightController.cs"
 "Assets/Scripts/MoveToPlayerController.cs"
 "Assets/Scripts/PlayerMovementController.cs"
