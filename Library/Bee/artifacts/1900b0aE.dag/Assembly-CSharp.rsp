@@ -345,6 +345,7 @@
 "Assets/Scripts/MoveToPlayerController.cs"
 "Assets/Scripts/PlayerMovementController.cs"
 "Assets/Scripts/SpawnBulletController.cs"
+"Assets/Scripts/SpawnMonstersRandom.cs"
 -langversion:8.0
 
 /deterministic

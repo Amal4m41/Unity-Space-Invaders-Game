@@ -58,11 +58,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\MoveStraightController.cs" />
     <Compile Include="Assets\Scripts\BorderCollision.cs" />
-    <Compile Include="Assets\Scripts\MoveToPlayerController.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovementController.cs" />
-    <Compile Include="Assets\Scripts\SpawnBulletController.cs" />
     <Compile Include="Assets\Scripts\CollisionPlayerBulletController.cs" />
     <Compile Include="Assets\Scripts\CollisionMonsterController.cs" />
+    <Compile Include="Assets\Scripts\MoveToPlayerController.cs" />
+    <Compile Include="Assets\Scripts\SpawnMonstersRandom.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovementController.cs" />
+    <Compile Include="Assets\Scripts\SpawnBulletController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
